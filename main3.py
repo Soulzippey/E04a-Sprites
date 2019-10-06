@@ -8,7 +8,6 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Sprites Example"
 
-
 class MyGame(arcade.Window):
 
     def __init__(self):
@@ -37,7 +36,9 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        
 
 def main():
     """ Main method """
